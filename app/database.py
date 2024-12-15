@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 
 from .config import settings
 
-
+# database - # SQLALCHEMY_DATABASE_URL = 'postgresql://postgres:Harshith%402808@localhost:5432/fastapi'
 # URL should be in the form of 'postgresql://<username>:<password>@<ip-address/hostname>/<database_name>'
 # if any special character used in password then use present encoding vakues eg: @ - %40
 # @	%40

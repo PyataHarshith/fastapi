@@ -18,6 +18,9 @@ config.file_config = ConfigParser(interpolation=None)
 # If you want to avoid escaping %, you can disable interpolation for the ConfigParser object entirely. Modify your env.py to create the ConfigParser without interpolation:
 # with interpolation = none - @ = %40, without it @ = %%40-one % is to escape
 
+# config.set_main_option("sqlalchemy.url", 'postgresql://postgres:Harshith%%402808@localhost:5432/fastapi')
+# # DATABASE_PASSWORD=Harshith%402808 - when we use sqlalchemy 
+# DATABASE_PASSWORD=Harshith%%402808 - when we use alembic
 
 
 config.set_main_option("sqlalchemy.url", f"postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}")
